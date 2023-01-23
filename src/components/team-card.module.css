@@ -1,0 +1,147 @@
+.container {
+  width: 248px;
+  height: 380px;
+  border-radius: 4px;
+  margin: auto;
+  background-size: cover;
+  cursor: pointer;
+
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 4px;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #fef5df;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Poppins", serif;
+}
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+.x {
+  font-size: 20px;
+  line-height: 20px;
+  background-color: rgba(77, 77, 77, 0.9);
+  padding: 10px;
+  height: 120px;
+  border-radius: 4px;
+  width: 100%;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #fef5df;
+  bottom: 160px;
+  position: relative;
+}
+
+.head {
+  font-size: 12px;
+  line-height: 20px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  margin: 10px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px #fef5df;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all 0.5s;
+}
+.price {
+  font-size: 13px;
+  /* line-height: 10px; */
+  font-family: Poppins;
+  font-weight: 600;
+  margin: 10px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .x {
+  display: none;
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+}
+.container:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.pyramid {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.pyramid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+.pyramid:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid blue;
+  z-index: -1;
+}
+
+.pyramid:after2 {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid green;
+  z-index: -2;
+}

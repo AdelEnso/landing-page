@@ -1,0 +1,12 @@
+export { AppHeader } from "./header";
+export { HeroCards } from "./hero-cards";
+export { Products } from "./products";
+export { Footer } from "./footer";
+export { ConatctForm } from "./conatct-form";
+export { ConatctInfo } from "./contact-infos";
+export { ProductsTabs } from "./products-tabs";
+export { IndustriesComponent } from "./industries";
+export { TeamCard } from "./team-card";
+export { Teams } from "./Teams";
+export { GetInTouch } from "./get-touch";
+export { PortfolioFeature } from "./portfolio";
