@@ -1,11 +1,9 @@
 import React from "react";
-import { Header, Container, Burger, Box } from "@mantine/core";
+import { Header, Burger, Box } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useComponentsStyles } from "./styles";
 import { MenuLinks } from "./menu-links";
 import { ResponsiveMenu } from "./menu-mobile";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 export const AppHeader = () => {
@@ -21,18 +19,6 @@ export const AppHeader = () => {
           marginRight: 20,
         }}
       >
-        {/* {pathname !== "/" && (
-          <Link href={"/"}>
-            <Image
-              alt="Logo"
-              width={60}
-              height={60}
-              color="red"
-              src={require("../assets/svgs/EnsoLab-black.png")}
-            />
-          </Link>
-        )} */}
-
         <MenuLinks />
 
         <Burger

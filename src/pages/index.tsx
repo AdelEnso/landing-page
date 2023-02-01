@@ -1,6 +1,6 @@
 import { HomeLayout } from "../layouts";
 import React from "react";
-import { HeroSection, ProductsSection } from "../sections";
+import { HeroSection } from "../sections";
 
 export default function Home() {
   return (

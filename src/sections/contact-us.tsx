@@ -1,11 +1,4 @@
-import {
-  Paper,
-  Text,
-  Button,
-  Group,
-  createStyles,
-  Container,
-} from "@mantine/core";
+import { Paper, Button, Group, createStyles, Container } from "@mantine/core";
 import { ConatctForm, ConatctInfo } from "../components";
 
 const useStyles = createStyles((theme) => {

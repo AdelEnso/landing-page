@@ -6,10 +6,9 @@ import {
   Box,
   Stack,
 } from "@mantine/core";
-import { IconSun, IconPhone, IconMapPin, IconAt } from "@tabler/icons";
 
 type ContactIconVariant = "white" | "gradient";
-
+import { AtIcon, SunIcon, MapIcon, PhoneIcon } from "../assets/svgs";
 interface ContactIconStyles {
   variant: ContactIconVariant;
 }
@@ -89,15 +88,15 @@ interface ContactIconsListProps {
 }
 
 const MOCKDATA = [
-  { title: "Email", description: "hello@ensolab.co", icon: IconAt },
-  { title: "Phone", description: "+971 (4) 529 4214", icon: IconPhone },
+  { title: "Email", description: "hello@ensolab.co", icon: AtIcon },
+  { title: "Phone", description: "+971 (4) 529 4214", icon: PhoneIcon },
   {
     title: "Address",
     description:
       "2603, UBora Office Tower, Business Bay Dubai, United Arab Emirates",
-    icon: IconMapPin,
+    icon: MapIcon,
   },
-  { title: "Working hours", description: "8 a.m. – 11 p.m.", icon: IconSun },
+  { title: "Working hours", description: "8 a.m. – 11 p.m.", icon: SunIcon },
 ];
 
 export function ContactIconsList({

@@ -1,14 +1,4 @@
-import {
-  Paper,
-  Text,
-  TextInput,
-  Textarea,
-  Button,
-  Group,
-  SimpleGrid,
-  createStyles,
-} from "@mantine/core";
-import BG from "../../public/Getintouch.png";
+import { Paper, Text, Button, Group, createStyles } from "@mantine/core";
 import { ConatctForm } from "./conatct-form";
 import { ContactIconsList } from "./contact-icons";
 
